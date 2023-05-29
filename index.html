@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Онлайн калькулятор семейного бюджета</title>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Ubuntu">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header_inner">
+                    <a href="index.html" class="nav_link"><img src="images/logo.png" width="50px" height="50px"></a>
+                    <a href="calc.html" class="nav_link">Зачем считать бюджет</a>
+                    <a href="how.html" class="nav_link">Расчет бюджета</a>
+                    <a href="about.html" class="nav_link">О сайте</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="message">
+                    Онлайн калькулятор семейного бюджета
+                </div>
+                <p class="undermessage">Когда приходит зарплата, чувствуешь себя богачом: можно позволить себе все, что захочется, и особенно не экономить. Но спустя время от зарплаты остаются сущие крохи, и нужно думать, как дотянуть до аванса.
+                Наш калькулятор поможет спланировать расходы так, чтобы не пришлось ни у кого занимать и даже удалось бы откладывать. Укажите свою зарплату и обязательные траты, и калькулятор рассчитает ваш ежедневный бюджет.</p>
+                <br><br><br>
+                Доходы:<br>
+                <input class="num" type="number" placeholder="Доходы семьи" id="income" onchange="calc()"><br>
+                Расходы:<br>
+                <input class="num" type="number" placeholder="Аренда жилья" id="rental" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Питание" id="feed" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Транспорт" id="transport" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Образование" id="study" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Налоги" id="taxes" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Развлечения и отдых" id="fun" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Одежда" id="cloth" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Медицина" id="medicine" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Спорт" id="sport" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Услуги связи" id="internet" onchange="calc()"><br>
+                <input class="num" type="number" placeholder="Прочее" id="other" onchange="calc()"><br>
+
+
+                Итого:<br>
+                <input class="num" type="number" placeholder="Остаток" id="total" readonly="true"><br>
+                <div class="message"></div>
+            </div>
+        </main>
+        <footer>
+            <br>2023 Шевелев Андрей Джонович
+        </footer>
+    </body>
+</html>
